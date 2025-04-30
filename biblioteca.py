@@ -15,6 +15,18 @@ def contaVogais(texto):
             cont += 1
     print(cont)
 
-def estoque (produto,qtd,valorUnitario):
+def estoque(produto,qtd,valorUnitario):
     valorTotal = qtd * valorUnitario
     return valorTotal
+
+def numeroPositivoNegativo(numero):
+    if numero > 0:
+        return "P, positivo"
+    elif numero <0:
+        return "N, negativo"
+    else:
+        return "Z, Zero"
+
+def somaDoisValores(valorUm, valorDois):
+    soma = valorUm + valorDois
+    return soma
