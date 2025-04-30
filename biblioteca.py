@@ -27,6 +27,8 @@ def numeroPositivoNegativo(numero):
     else:
         return "Z, Zero"
 
-def somaDoisValores(valorUm, valorDois):
-    soma = valorUm + valorDois
+def somaDoisValores(*numeros):
+    soma = 0
+    for i in range(len(numeros)):
+        soma += numeros[i]
     return soma
